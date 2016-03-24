@@ -3,9 +3,9 @@
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
+	sf::RenderWindow window(sf::VideoMode(800, 600), "Beekeeper");
+	
+	sf::Font font();
 
 	while (window.isOpen())
 	{
@@ -17,7 +17,6 @@ int main()
 		}
 
 		window.clear();
-		window.draw(shape);
 		window.display();
 	}
 
