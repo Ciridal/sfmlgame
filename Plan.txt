@@ -1,2 +1,23 @@
 Ideas for the game:
 
+Setting:
+-A meadow
+-Beehive
+
+
+Basic gameplay:
+-Send bees to collect honey
+-Fight off humans trying to steal the honey
+
+Additional mechanics:
+
+-Worker and fighter bees
+-Fighter bees require honey
+
+More info:
+
+-Made with sfml
+
+-2d game
+
+-for pc
