@@ -1,5 +1,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
+#include "WorkerBee.h"
 
 int main()
 {
@@ -17,6 +19,7 @@ int main()
 		}
 
 		window.clear();
+		
 		window.display();
 	}
 
