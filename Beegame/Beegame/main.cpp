@@ -7,7 +7,11 @@ int main()
 {
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Beekeeper");
 	
-	sf::Font font();
+	sf::Font font;
+	if (!font.loadFromFile("..\\fontti.TTF"))
+	{
+
+	}
 
 	while (window.isOpen())
 	{
