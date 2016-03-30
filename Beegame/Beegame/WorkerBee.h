@@ -11,9 +11,9 @@ public:
 
 	~WorkerBee();
 
-	sf::CircleShape createBee();
+	sf::CircleShape* createWorkerB();
 
-	void drawBee();
+
 
 private:
 
