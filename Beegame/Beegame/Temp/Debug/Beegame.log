@@ -1,18 +1,19 @@
-﻿Build started 30.3.2016 15:06:45.
+﻿Build started 31.3.2016 11:33:51.
      1>Project "C:\Users\SinjaMon\Documents\sfmlgame\Beegame\Beegame\Beegame.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Temp\Debug\) contains files shared from another project (huhhuh.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\SinjaMon\Documents\sfmlgame\Beegame\Beegame\\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Temp\Debug\\" /Fd"Temp\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt WorkerBee.cpp main.cpp
-         WorkerBee.cpp
-     1>c:\users\sinjamon\documents\sfmlgame\beegame\beegame\workerbee.cpp(16): error C2063: 'WorkerBee::workerB' : not a function
-     1>c:\users\sinjamon\documents\sfmlgame\beegame\beegame\workerbee.cpp(16): fatal error C1903: unable to recover from previous error(s); stopping compilation
-         Generating Code...
-         Compiling...
-         main.cpp
-     1>c:\users\sinjamon\documents\sfmlgame\beegame\beegame\main.cpp(13): error C2064: term does not evaluate to a function taking 0 arguments
-         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\SinjaMon\Documents\sfmlgame\Beegame\Beegame\\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Temp\Debug\\" /Fd"Temp\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp
+         Game.cpp
+     1>c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\window\window.hpp(521): error C2248: 'sf::NonCopyable::NonCopyable' : cannot access private member declared in class 'sf::NonCopyable'
+                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\system\noncopyable.hpp(67) : see declaration of 'sf::NonCopyable::NonCopyable'
+                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\system\noncopyable.hpp(42) : see declaration of 'sf::NonCopyable'
+                 This diagnostic occurred in the compiler generated function 'sf::Window::Window(const sf::Window &)'
+     1>c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\graphics\rendertarget.hpp(419): error C2248: 'sf::NonCopyable::NonCopyable' : cannot access private member declared in class 'sf::NonCopyable'
+                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\system\noncopyable.hpp(67) : see declaration of 'sf::NonCopyable::NonCopyable'
+                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\system\noncopyable.hpp(42) : see declaration of 'sf::NonCopyable'
+                 This diagnostic occurred in the compiler generated function 'sf::RenderTarget::RenderTarget(const sf::RenderTarget &)'
      1>Done Building Project "C:\Users\SinjaMon\Documents\sfmlgame\Beegame\Beegame\Beegame.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.76
+Time Elapsed 00:00:00.40

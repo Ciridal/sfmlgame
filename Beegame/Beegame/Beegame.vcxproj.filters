@@ -21,13 +21,13 @@
     <ClCompile Include="WorkerBee.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Hive.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="KillerBee.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Flower.cpp">
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,13 +35,13 @@
     <ClInclude Include="WorkerBee.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Hive.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="KillerBee.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Flower.h">
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

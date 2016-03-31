@@ -86,15 +86,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Flower.cpp" />
-    <ClCompile Include="Hive.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="KillerBee.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="WorkerBee.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Flower.h" />
-    <ClInclude Include="Hive.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="KillerBee.h" />
     <ClInclude Include="WorkerBee.h" />
   </ItemGroup>
