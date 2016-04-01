@@ -11,7 +11,7 @@ public:
 
 	void update(float deltatime);
 
-	sf::RenderWindow render();
+
 
 private:
 
