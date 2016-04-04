@@ -1,10 +1,11 @@
 #pragma once
+#include "WorkerBee.h"
+
 class GameObject
 {
 public:
 	GameObject();
 	~GameObject();
 
-	virtual void update(float deltatime);
 };
 

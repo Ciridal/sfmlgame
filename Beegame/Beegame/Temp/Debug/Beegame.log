@@ -1,18 +1,18 @@
-﻿Build started 1.4.2016 12:48:18.
-     1>Project "C:\Users\SinjaMon\Documents\sfmlgame\Beegame\Beegame\Beegame.vcxproj" on node 2 (Build target(s)).
+﻿Build started 4.4.2016 15:35:50.
+     1>Project "C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Temp\Debug\) contains files shared from another project (huhhuh.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\SinjaMon\Documents\sfmlgame\Beegame\Beegame\\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Temp\Debug\\" /Fd"Temp\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
-         main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Temp\Debug\\" /Fd"Temp\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp
+         Game.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\SinjaMon\Documents\sfmlgame\Beegame\\Build\Debug\Beegame.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\SinjaMon\Documents\sfmlgame\Beegame\Beegame\\lib "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\SinjaMon\Documents\sfmlgame\Beegame\\Build\Debug\Beegame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\SinjaMon\Documents\sfmlgame\Beegame\\Build\Debug\Beegame.lib" /MACHINE:X86 Temp\Debug\Game.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\\lib "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.lib" /MACHINE:X86 Temp\Debug\Game.obj
          Temp\Debug\GameObject.obj
          Temp\Debug\KillerBee.obj
          Temp\Debug\main.obj
          Temp\Debug\WorkerBee.obj
-         Beegame.vcxproj -> C:\Users\SinjaMon\Documents\sfmlgame\Beegame\\Build\Debug\Beegame.exe
-     1>Done Building Project "C:\Users\SinjaMon\Documents\sfmlgame\Beegame\Beegame\Beegame.vcxproj" (Build target(s)).
+         Beegame.vcxproj -> C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.exe
+     1>Done Building Project "C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.78
+Time Elapsed 00:00:01.10

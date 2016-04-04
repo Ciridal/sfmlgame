@@ -1,21 +1,25 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
+
+using namespace sf;
+
 class WorkerBee
 {
 
 public:
-	WorkerBee();
-	
 
+	CircleShape workerB;
+
+	WorkerBee();
 
 	~WorkerBee();
 
-	sf::CircleShape* createWorkerB();
-
-
+	void Update(Clock& clock);
+	void Draw(RenderWindow& window);
 
 private:
 
 };
 
+
+ 

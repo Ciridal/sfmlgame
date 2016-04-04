@@ -4,6 +4,8 @@
 
 WorkerBee::WorkerBee()
 {
+	workerB = CircleShape(5);
+	workerB.setFillColor(Color::Yellow);
 }
 
 
@@ -12,15 +14,12 @@ WorkerBee::~WorkerBee()
 }
 
 
-sf::CircleShape* WorkerBee::createWorkerB()
+void WorkerBee::Update(Clock& clock)
 {
 	
-	sf::CircleShape* workerB;
-	workerB = new sf::CircleShape(5);
-	workerB->setFillColor(sf::Color::Yellow);
-	workerB->setPosition(300, 300);
-	
-
-	return workerB;
 }
 
+void WorkerBee::Draw(RenderWindow& window)
+{
+	window.draw(workerB);
+}
