@@ -6,6 +6,7 @@ WorkerBee::WorkerBee()
 {
 	workerB = CircleShape(5);
 	workerB.setFillColor(Color::Yellow);
+	workerB.setPosition(100, 500);
 }
 
 
@@ -21,5 +22,9 @@ void WorkerBee::Update(Clock& clock)
 
 void WorkerBee::Draw(RenderWindow& window)
 {
-	window.draw(workerB);
+	if (Mouse::isButtonPressed(Mouse::Left))
+	{
+		window.draw(workerB);
+		
+	}
 }

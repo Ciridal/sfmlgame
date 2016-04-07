@@ -12,6 +12,11 @@ public:
 
 	RenderWindow* window;
 	WorkerBee* workerB;
+	KillerBee* killerB;
+	Hive* hive;
+	Hive* points;
+	Hive* honey;
+
 	Clock clock;
 
 	Game();

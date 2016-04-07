@@ -1,13 +1,30 @@
 #pragma once
+#include <SFML/Graphics.hpp>
+
+using namespace sf;
+
 class Hive
 {
 public:
-	Hive(int health, int score);
+
+	
+
+	Font font;
+	Text points;
+	Text honey;
+
+	CircleShape hive;
+	
+	Hive();
 	~Hive();
 
-	int damage();
+	
+	void Update(Clock& clock);
+	void Draw(RenderWindow& window);;
 
 private:
-	int hp=50;
+	
+	int pointAmount = 0;
+	int honeyAmount = 0;
 };
 
