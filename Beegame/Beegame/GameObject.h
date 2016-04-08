@@ -2,6 +2,7 @@
 #include "WorkerBee.h"
 #include "KillerBee.h"
 #include "Hive.h"
+#include "Enemy.h"
 class GameObject
 {
 public:

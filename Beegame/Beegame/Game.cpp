@@ -9,6 +9,7 @@ Game::Game()
 	hive = new Hive();
 	points = new Hive();
 	honey = new Hive();
+	enemy = new Enemy();
 }
 
 
@@ -20,6 +21,7 @@ Game::~Game()
 	delete window;
 	delete points;
 	delete honey;
+	delete enemy;
 }
 
 void Game::Update()
@@ -40,6 +42,7 @@ void Game::Update()
 		workerB->Update(clock);
 		killerB->Update(clock);
 		hive->Update(clock);
+		enemy->Update(clock);
 
 		Draw();
 		clock.restart();
@@ -55,5 +58,6 @@ void Game::Draw()
 	hive->Draw(*window);
 	points->Draw(*window);
 	honey->Draw(*window);
+	enemy -> Draw(*window);
 	window->display();
 }

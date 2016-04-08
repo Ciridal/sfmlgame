@@ -18,7 +18,7 @@ Hive::Hive()
 	points.setColor(Color::White);
 
 	honey.setFont(font);
-	honey.setString("honey: ");
+	honey.setString("Honey: ");
 	honey.setCharacterSize(24);
 	honey.setColor(Color::White);
 	honey.setPosition(0, 24);

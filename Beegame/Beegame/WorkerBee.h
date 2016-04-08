@@ -18,7 +18,7 @@ public:
 	void Draw(RenderWindow& window);
 
 private:
-
+	bool isClicked;
 };
 
 

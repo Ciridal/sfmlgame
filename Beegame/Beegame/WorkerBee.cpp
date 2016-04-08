@@ -7,6 +7,7 @@ WorkerBee::WorkerBee()
 	workerB = CircleShape(5);
 	workerB.setFillColor(Color::Yellow);
 	workerB.setPosition(100, 500);
+	isClicked = false;
 }
 
 
@@ -23,6 +24,10 @@ void WorkerBee::Update(Clock& clock)
 void WorkerBee::Draw(RenderWindow& window)
 {
 	if (Mouse::isButtonPressed(Mouse::Left))
+	{
+		isClicked = true;
+	}
+	if (isClicked)
 	{
 		window.draw(workerB);
 		

@@ -16,6 +16,7 @@ public:
 	Hive* hive;
 	Hive* points;
 	Hive* honey;
+	Enemy* enemy;
 
 	Clock clock;
 

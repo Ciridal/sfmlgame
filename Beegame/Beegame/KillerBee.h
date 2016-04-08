@@ -14,5 +14,8 @@ public:
 
 	void Update(Clock& clock);
 	void Draw(RenderWindow& window);
+
+private:
+	bool isClicked;
 };
 
