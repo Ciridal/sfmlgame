@@ -1,10 +1,16 @@
 #pragma once
+#include "WorkerBee.h"
+#include "KillerBee.h"
+#include "Hive.h"
 class GameObject
 {
 public:
+	
+
 	GameObject();
 	~GameObject();
 
-	virtual void update(float deltatime);
+	void Update(Clock clock);
+	void Draw(RenderWindow& window);
 };
 

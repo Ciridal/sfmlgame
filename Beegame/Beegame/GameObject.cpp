@@ -10,7 +10,7 @@ GameObject::~GameObject()
 {
 }
 
-void GameObject::update(float deltatime)
+void GameObject::Draw(RenderWindow& window)
 {
-
+	
 }
