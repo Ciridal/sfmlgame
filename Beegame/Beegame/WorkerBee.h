@@ -9,6 +9,7 @@ class WorkerBee
 public:
 
 	CircleShape workerB;
+	Texture workerTexture;
 
 	WorkerBee();
 

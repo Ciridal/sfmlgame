@@ -4,10 +4,17 @@
 
 WorkerBee::WorkerBee()
 {
-	workerB = CircleShape(5);
-	workerB.setFillColor(Color::Yellow);
-	workerB.setPosition(100, 500);
+	workerB = CircleShape(50);
+
+	workerB.setPosition(100, 400);
 	isClicked = false;
+
+	if (!workerTexture.loadFromFile("..\\workerbeetexture.png"))
+	{
+		
+	}
+
+	workerB.setTexture(&workerTexture);
 }
 
 

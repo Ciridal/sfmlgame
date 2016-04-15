@@ -5,7 +5,7 @@ Hive::Hive()
 {
 	hive = CircleShape(40);
 	hive.setFillColor(Color::Blue);
-	hive.setPosition(10, 500);
+	hive.setPosition(10, 70);
 	
 	if (!font.loadFromFile("..\\fontti.TTF"))
 	{

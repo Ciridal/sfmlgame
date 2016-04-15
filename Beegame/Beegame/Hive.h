@@ -7,7 +7,6 @@ class Hive
 {
 public:
 
-	
 
 	Font font;
 	Text points;
@@ -17,6 +16,8 @@ public:
 	
 	Hive();
 	~Hive();
+
+	static Vector2i getPosition(const Window &relativeTo);
 
 	
 	void Update(Clock& clock);

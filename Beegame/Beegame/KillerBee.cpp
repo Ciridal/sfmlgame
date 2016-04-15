@@ -3,10 +3,21 @@
 
 KillerBee::KillerBee()
 {
-	killerB = CircleShape(4);
-	killerB.setFillColor(Color::Red);
+	killerB = CircleShape(50);
+	
+	
+
 	killerB.setPosition(100, 500);
+
 	isClicked = false;
+
+	if (!killerTexture.loadFromFile("..\\killerbeetexture.png"))
+	{
+
+	}
+
+	killerB.setTexture(&killerTexture);
+	
 }
 
 
@@ -27,6 +38,7 @@ void KillerBee::Draw(RenderWindow& window)
 
 	if (isClicked)
 	{
+		
 		window.draw(killerB);
 	}
 }

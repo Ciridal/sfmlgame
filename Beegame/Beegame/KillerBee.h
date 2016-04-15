@@ -8,6 +8,7 @@ class KillerBee
 public:
 
 	CircleShape killerB;
+	Texture killerTexture;
 
 	KillerBee();
 	~KillerBee();

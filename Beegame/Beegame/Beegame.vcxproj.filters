@@ -62,4 +62,12 @@
       <Filter>Resource Files</Filter>
     </Font>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\killerbeetexture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\workerbeetexture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

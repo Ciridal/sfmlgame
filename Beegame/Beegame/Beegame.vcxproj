@@ -105,6 +105,10 @@
   <ItemGroup>
     <Font Include="..\fontti.TTF" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\killerbeetexture.png" />
+    <Image Include="..\workerbeetexture.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
