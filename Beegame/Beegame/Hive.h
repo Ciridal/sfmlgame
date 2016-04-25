@@ -21,11 +21,16 @@ public:
 
 	
 	void Update(Clock& clock);
-	void Draw(RenderWindow& window);;
+	void Draw(RenderWindow& window);
+	void takeDamage();
+	
 
 private:
 	
+	bool isHit;
+
 	int pointAmount = 0;
 	int honeyAmount = 0;
+	int health = 50;
 };
 

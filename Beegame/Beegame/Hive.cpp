@@ -41,3 +41,12 @@ void Hive::Update(Clock& clock)
 {
 
 }
+
+void Hive::takeDamage()
+{
+	if (isHit == true)
+	{
+		health-5;
+	}
+
+}
