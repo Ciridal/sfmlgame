@@ -13,7 +13,8 @@ public:
 	Text honey;
 
 	CircleShape hive;
-	
+	Texture hiveTexture;
+
 	Hive();
 	~Hive();
 

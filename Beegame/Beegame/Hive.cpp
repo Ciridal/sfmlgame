@@ -3,9 +3,18 @@
 
 Hive::Hive()
 {
-	hive = CircleShape(40);
-	hive.setFillColor(Color::Blue);
-	hive.setPosition(10, 70);
+	hive = CircleShape(80);
+	
+	hive.setPosition(10, 400);
+
+
+
+	if (!hiveTexture.loadFromFile("..\\beehivetexture.png"))
+	{
+
+	}
+
+	hive.setTexture(&hiveTexture);
 	
 	if (!font.loadFromFile("..\\fontti.TTF"))
 	{

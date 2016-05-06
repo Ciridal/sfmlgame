@@ -106,6 +106,7 @@
     <Font Include="..\fontti.TTF" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\beehivetexture.png" />
     <Image Include="..\killerbeetexture.png" />
     <Image Include="..\workerbeetexture.png" />
   </ItemGroup>

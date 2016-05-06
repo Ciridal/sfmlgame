@@ -53,9 +53,9 @@ void Game::Update()
 void Game::Draw()
 {
 	window->clear(Color(135, 206, 255));
+	hive->Draw(*window);
 	workerB->Draw(*window);
 	killerB -> Draw(*window);
-	hive->Draw(*window);
 	points->Draw(*window);
 	honey->Draw(*window);
 	enemy -> Draw(*window);

@@ -69,5 +69,8 @@
     <Image Include="..\workerbeetexture.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="..\beehivetexture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
