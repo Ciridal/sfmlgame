@@ -1,12 +1,14 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "Vektori2.h"
+#include "GameObject.h"
 
 using namespace sf;
 
-class Hive
+class Hive : public GameObject
 {
 public:
-
+	
 
 	Font font;
 	Text points;
@@ -15,14 +17,14 @@ public:
 	CircleShape hive;
 	Texture hiveTexture;
 
-	Hive();
+	Hive(std::string texturePath);
 	~Hive();
 
-	static Vector2i getPosition(const Window &relativeTo);
+	Vektori2 getPosition(const Window &relativeTo) {};
 
 	
-	void Update(Clock& clock);
-	void Draw(RenderWindow& window);
+	void Update(float dt) override;
+	//void Draw(RenderWindow& window) override;
 	void takeDamage();
 	
 
@@ -30,8 +32,7 @@ private:
 	
 	bool isHit;
 
-	int pointAmount = 0;
-	int honeyAmount = 0;
+
 	int health = 50;
 };
 

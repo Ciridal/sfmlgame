@@ -1,21 +1,12 @@
 #include "Hive.h"
 
 
-Hive::Hive()
+Hive::Hive(std::string texturePath) 
+	: GameObject(texturePath)
 {
-	hive = CircleShape(80);
-	
 	hive.setPosition(10, 400);
-
-
-
-	if (!hiveTexture.loadFromFile("..\\beehivetexture.png"))
-	{
-
-	}
-
-	hive.setTexture(&hiveTexture);
 	
+	/*
 	if (!font.loadFromFile("..\\fontti.TTF"))
 	{
 		
@@ -31,6 +22,7 @@ Hive::Hive()
 	honey.setCharacterSize(24);
 	honey.setColor(Color::White);
 	honey.setPosition(0, 24);
+	*/
 }
 
 
@@ -38,15 +30,16 @@ Hive::~Hive()
 {
 }
 
-
+/*
 void Hive::Draw(RenderWindow& window)
 {
 	window.draw(hive);
 	window.draw(points);
 	window.draw(honey);
 }
+*/
 
-void Hive::Update(Clock& clock)
+void Hive::Update(float dt)
 {
 
 }

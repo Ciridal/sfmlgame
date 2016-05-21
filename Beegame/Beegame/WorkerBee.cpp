@@ -2,19 +2,11 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 
-WorkerBee::WorkerBee()
+WorkerBee::WorkerBee(std::string texturePath) 
+	: GameObject(texturePath)
 {
-	workerB = CircleShape(50);
-
 	workerB.setPosition(100, 400);
 	isClicked = false;
-
-	if (!workerTexture.loadFromFile("..\\workerbeetexture.png"))
-	{
-		
-	}
-
-	workerB.setTexture(&workerTexture);
 	
 	movementSpeed = 180.0f;
 	waypoints = std::vector<Vektori2*>();
@@ -37,7 +29,7 @@ WorkerBee::~WorkerBee()
 }
 
 
-void WorkerBee::Update(Clock& clock)
+void WorkerBee::Update(float dt)
 {
 	Vektori2 directionVector = Vektori2();
 	Vektori2 targetPosition = *waypoints[currentWaypoint];
@@ -45,9 +37,9 @@ void WorkerBee::Update(Clock& clock)
 	directionVector = Vektori2(targetPosition.X - m_position.X, targetPosition.Y - m_position.Y);
 	directionVector.Normalize();
 
-	directionVector = directionVector * movementSpeed * clock;
+	directionVector = directionVector * movementSpeed * dt;
 
-	float distanceToTarget = Vektori2(targetPosition.X - m_position.X, targetPosition.Y - m_position.Y);
+	float distanceToTarget = Vektori2(targetPosition.X - m_position.X, targetPosition.Y - m_position.Y).Magnitude();
 	float directionVectorLength = directionVector.Magnitude();
 
 	if (distanceToTarget < directionVectorLength)
@@ -65,17 +57,4 @@ void WorkerBee::Update(Clock& clock)
 		}
 	}
 	m_position += directionVector;
-}
-
-void WorkerBee::Draw(RenderWindow& window)
-{
-	if (Mouse::isButtonPressed(Mouse::Left))
-	{
-		isClicked = true;
-	}
-	if (isClicked)
-	{
-		window.draw(workerB);
-		
-	}
 }

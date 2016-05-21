@@ -1,18 +1,19 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "GameObject.h" 
 
 using namespace sf;
 
-class Enemy
+class Enemy : public GameObject
 {
 public:
 
-	RectangleShape enemy;
+	
 
-	Enemy();
+	Enemy(std::string texturePath);
 	~Enemy();
 
-	void Update(Clock& clock);
-	void Draw(RenderWindow& window);
+	void Update(float dt);
+
 };
 

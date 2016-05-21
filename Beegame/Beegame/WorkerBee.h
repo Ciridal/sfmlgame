@@ -1,10 +1,11 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Vektori2.h"
+#include "GameObject.h"
 
 using namespace sf;
 
-class WorkerBee 
+class WorkerBee : public GameObject
 {
 
 public:
@@ -12,13 +13,11 @@ public:
 	CircleShape workerB;
 	Texture workerTexture;
 
-	WorkerBee();
+	WorkerBee(std::string texturePath);
 
 	~WorkerBee();
 
-
-	void Update(Clock& clock);
-	void Draw(RenderWindow& window);
+	void Update(float dt) override;
 
 private:
 	bool isClicked;

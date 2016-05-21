@@ -1,32 +1,16 @@
-﻿Build started 6.5.2016 14:06:37.
-     1>Project "C:\Users\SinjaMon\Documents\sfmlgame\Beegame\Beegame\Beegame.vcxproj" on node 2 (Build target(s)).
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Temp\Debug\) contains files shared from another project (huhhuh.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\SinjaMon\Documents\sfmlgame\Beegame\Beegame\\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Temp\Debug\\" /Fd"Temp\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp GameObject.cpp WorkerBee.cpp main.cpp
-         WorkerBee.cpp
-     1>c:\users\sinjamon\documents\sfmlgame\beegame\beegame\workerbee.cpp(48): error C2678: binary '*' : no operator found which takes a left-hand operand of type 'Vektori2' (or there is no acceptable conversion)
-                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\vektori2.h(29): could be 'Vektori2 &Vektori2::operator *(float)'
-                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\graphics\color.hpp(175): or       'sf::Color sf::operator *(const sf::Color &,const sf::Color &)'
-                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\graphics\transform.hpp(404): or       'sf::Vector2f sf::operator *(const sf::Transform &,const sf::Vector2f &)'
-                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\graphics\transform.hpp(376): or       'sf::Transform sf::operator *(const sf::Transform &,const sf::Transform &)'
-                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\system\time.hpp(328): or       'sf::Time sf::operator *(sf::Int64,sf::Time)'
-                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\system\time.hpp(316): or       'sf::Time sf::operator *(float,sf::Time)'
-                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\system\time.hpp(304): or       'sf::Time sf::operator *(sf::Time,sf::Int64)'
-                 c:\users\sinjamon\documents\sfmlgame\beegame\beegame\include\sfml\system\time.hpp(292): or       'sf::Time sf::operator *(sf::Time,float)'
-                 while trying to match the argument list '(Vektori2, sf::Clock)'
-     1>c:\users\sinjamon\documents\sfmlgame\beegame\beegame\workerbee.cpp(50): error C2440: 'initializing' : cannot convert from 'Vektori2' to 'float'
-                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-     1>c:\users\sinjamon\documents\sfmlgame\beegame\beegame\workerbee.cpp(61): warning C4018: '>=' : signed/unsigned mismatch
-         Generating Code...
-         Compiling...
-         Game.cpp
-         Generating Code...
-         Compiling...
-         main.cpp
-         GameObject.cpp
-         Generating Code...
-     1>Done Building Project "C:\Users\SinjaMon\Documents\sfmlgame\Beegame\Beegame\Beegame.vcxproj" (Build target(s)) -- FAILED.
+﻿Build started 21.5.2016 12.49.17.
+     1>Project "C:\Users\Sinja\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sinja\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Sinja\Desktop\sfmlgame\Beegame\Beegame\\lib "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Sinja\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Sinja\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.lib" /MACHINE:X86 Temp\Debug\Enemy.obj
+         Temp\Debug\Game.obj
+         Temp\Debug\GameObject.obj
+         Temp\Debug\Hive.obj
+         Temp\Debug\KillerBee.obj
+         Temp\Debug\main.obj
+         Temp\Debug\WorkerBee.obj
+     1>sfml-graphics-d.lib(sfml-graphics-d-2.dll) : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'X86'
+     1>Done Building Project "C:\Users\Sinja\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:03.08
+Time Elapsed 00:00:00.09

@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <SFML\Graphics.hpp>
 
 class Vektori2
 {
@@ -9,6 +10,12 @@ public:
 	{
 		X = 0.0f;
 		Y = 0.0f;
+	}
+
+	Vektori2(sf::Vector2f vec)
+	{
+		X = vec.x;
+		Y = vec.y;
 	}
 
 	Vektori2(float x, float y)
