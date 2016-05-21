@@ -19,15 +19,20 @@ GameObject::~GameObject()
 {
 }
 
+Vektori2 GameObject::getPositionInPix()
+{
+	return Vektori2(sprite.getPosition().x, sprite.getPosition().y);
+}
+
 Vektori2 GameObject::getPosition()
 {
-	return Vektori2(sprite.getPosition().x / Game::window->getSize().x, sprite.getPosition().y / Game::window->getSize().y);
+	return Vektori2(sprite.getPosition().x / Game::instance->window->getSize().x, sprite.getPosition().y / Game::instance->window->getSize().y);
 }
 
 void GameObject::setPosition(float X, float Y)
 {
 	Y = 1.0f - Y;
-	sprite.setPosition(Game::window->getSize().x * X, Game::window->getSize().y * Y);
+	sprite.setPosition(Game::instance->window->getSize().x * X, Game::instance->window->getSize().y * Y);
 }
 
 void GameObject::Draw(sf::RenderWindow& window)
@@ -68,4 +73,9 @@ int GameObject::getRenderPriority()
 void GameObject::setRenderPriority(int priority)
 {
 	renderPriority = priority;
+}
+
+sf::Sprite GameObject::getSprite() const
+{
+	return sprite;
 }

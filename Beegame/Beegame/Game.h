@@ -7,13 +7,16 @@
 #include "KillerBee.h"
 #include "Button.h"
 
-
 using namespace sf;
 
 class Game
 {
 public:
-	static RenderWindow* window;
+	static Game* instance;
+
+	RenderWindow* window;
+
+	Event event;
 
 	Clock clock;
 
@@ -26,15 +29,33 @@ public:
 	T* Instantiate(std::string texturePath) 
 	{
 		T* gameObject = new T(texturePath);
-		gameObjects.push_back(gameObject);
+		newGameObjects.push_back(gameObject);
 		return gameObject;
 	}
 
+	void destroy(GameObject* gameObject);
+
+	void updateGameObjectList();
+
+	void setHoney(int honeyAmount);
+	void setScore(int scoreAmount);
+
+	void addHoney(int honeyAmount);
+
+	void spawnWorkerBee();
+	void spawnKillerBee();
+
 private:
 	std::vector<GameObject*> gameObjects;
+	std::vector<GameObject*> newGameObjects;
+	std::vector<GameObject*> destroyObjects;
 
-	int pointAmount = 0;
-	int honeyAmount = 0;
+	int scoreAmount;
+	int honeyAmount;
+
+	Font font;
+	Text score;
+	Text honey;
 
 };
 

@@ -40,7 +40,25 @@ public:
 
 		Y = Y * value;
 
-	
+		return *this;
+	}
+
+	Vektori2& operator*=(float value)
+	{
+
+		X = X * value;
+
+		Y = Y * value;
+
+		return *this;
+	}
+
+	Vektori2& operator/=(float value)
+	{
+
+		X = X / value;
+
+		Y = Y / value;
 
 		return *this;
 	}

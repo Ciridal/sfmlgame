@@ -1,17 +1,15 @@
 #include "Game.h"
-
+#include "Button.h"
 
 Game::Game()
 {
+	if (instance != nullptr)
+		return;
+
+	instance = this;
+
 	window = new RenderWindow(VideoMode(800, 600), "Beekeeper");
 
-	WorkerBee* workerB = Instantiate<WorkerBee>("..\\workerbeetexture.png");
-	workerB->setScale(0.25f);
-	workerB->setPosition(0.3f, 0.2f);
-
-	KillerBee* killerB= Instantiate <KillerBee>("..\\killerbeetexture.png");
-	killerB->setScale(0.25f);
-	killerB -> setPosition(0.24f, 0.2f);
 
 	Hive* hive = Instantiate <Hive>("..\\beehivetexture.png");
 	hive->setScale(3);
@@ -23,9 +21,12 @@ Game::Game()
 
 	Button* workerButton = Instantiate <Button>("..\\workerbeebutton.png");
 	workerButton->setPosition(0.07f, 0.06f);
+	workerButton->onClicked = &Game::spawnWorkerBee;
+
 
 	Button* killerButton = Instantiate <Button>("..\\killerbeebutton.png");
 	killerButton->setPosition(0.2f, 0.06f);
+	killerButton->onClicked = &Game::spawnKillerBee;
 
 	GameObject* background = Instantiate<GameObject>("..\\background.png");
 	background->setPosition(0.5f, 0.5f);
@@ -34,7 +35,25 @@ Game::Game()
 	GameObject* flowers = Instantiate<GameObject>("..\\flowers.png");
 	flowers->setPosition(0.9f, 0.2f);
 
-	std::sort(gameObjects.begin(), gameObjects.end(), GameObject::compareRenderPriority);
+	
+
+	if (!font.loadFromFile("..\\fontti.TTF"))
+	{
+		throw "Unable to load font";
+	}
+
+	score.setFont(font);
+	score.setCharacterSize(30);
+	score.setColor(Color::White);
+	score.setPosition(4, 4);
+
+	honey.setFont(font);
+	honey.setCharacterSize(30);
+	honey.setColor(Color::White);
+	honey.setPosition(4, 38);
+
+	setScore(0);
+	setHoney(10000);
 }
 
 
@@ -47,36 +66,31 @@ Game::~Game()
 
 }
 
-RenderWindow* Game::window = nullptr;
+Game* Game::instance = nullptr;
 
 void Game::Update()
 {
 	Clock clock;
 	float deltaTime = 0.0f;
 
-
-
 	while (window->isOpen())
 	{
-
-
-		Event event;
 		while (window->pollEvent(event))
 		{
 			if (event.type == Event::Closed)
 				window->close();
 		}
 
+		deltaTime = clock.restart().asSeconds();
 		for (GameObject* gameObject : gameObjects)
 		{
 			gameObject->Update(deltaTime);
 		}
 
-		Draw();
-		
-	}
+		updateGameObjectList();
 
-	deltaTime = clock.restart().asSeconds();
+		Draw();
+	}
 }
 
 void Game::Draw()
@@ -86,7 +100,80 @@ void Game::Draw()
 	for (GameObject* gameObject : gameObjects)
 	{
 		gameObject->Draw(*window);
+		
 	}
+	window->draw(score);
+	window->draw(honey);
 
 	window->display();
+}
+
+void Game::setHoney(int honeyAmount)
+{
+	this->honeyAmount = honeyAmount;
+	honey.setString("Honey	" + std::to_string(honeyAmount));
+}
+
+void Game::addHoney(int honeyAmount)
+{
+	setHoney(this->honeyAmount + honeyAmount);
+}
+
+void Game::setScore(int scoreAmount)
+{
+	this->scoreAmount = scoreAmount;
+	score.setString("Score	 " + std::to_string(scoreAmount));
+
+}
+
+void Game::spawnWorkerBee()
+{
+	if (honeyAmount >= 10)
+	{
+		setHoney(honeyAmount - 10);
+
+		WorkerBee* workerB = Instantiate<WorkerBee>("..\\workerbeetexture.png");
+		workerB->setScale(0.25f);
+		workerB->setPosition(0.1f, 0.2f);
+	}
+}
+
+void Game::spawnKillerBee()
+{
+	if (honeyAmount >= 50)
+	{
+		setHoney(honeyAmount - 50);
+
+		KillerBee* killerB = Instantiate <KillerBee>("..\\killerbeetexture.png");
+		killerB->setScale(0.25f);
+		killerB->setPosition(0.24f, 0.2f);
+	}
+}
+
+void Game::updateGameObjectList()
+{
+	while (destroyObjects.size() > 0)
+	{
+		std::vector<GameObject*>::iterator iter = std::find(gameObjects.begin(), gameObjects.end(), destroyObjects.at(0));
+		if (iter != gameObjects.end())
+		{
+			gameObjects.erase(iter);
+			destroyObjects.erase(destroyObjects.begin());
+		}
+	}
+
+	bool requiresSort = newGameObjects.size() > 0;
+	while (newGameObjects.size() > 0)
+	{
+		gameObjects.push_back(newGameObjects.at(0));
+		newGameObjects.erase(newGameObjects.begin());
+	}
+
+	if(requiresSort)
+		std::sort(gameObjects.begin(), gameObjects.end(), GameObject::compareRenderPriority);
+}
+
+void Game::destroy(GameObject* gameObject)
+{
+	destroyObjects.push_back(gameObject);
 }

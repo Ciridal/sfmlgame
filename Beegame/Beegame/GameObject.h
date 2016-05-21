@@ -19,6 +19,7 @@ public:
 	virtual void Update(float dt) {};
 	virtual void Draw(sf::RenderWindow& window);
 
+	Vektori2 getPositionInPix();
 	Vektori2 getPosition();
 	void setPosition(float X,float Y);
 
@@ -32,8 +33,9 @@ public:
 	int getRenderPriority();
 	void setRenderPriority(int priority);
 
+	sf::Sprite getSprite() const;
 
-private:
+protected:
 
 	int renderPriority;
 

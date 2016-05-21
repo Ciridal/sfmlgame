@@ -7,21 +7,7 @@ Hive::Hive(std::string texturePath)
 	hive.setPosition(10, 400);
 	
 	/*
-	if (!font.loadFromFile("..\\fontti.TTF"))
-	{
-		
-	}
 
-	points.setFont(font);
-	points.setString("Points: ");
-	points.setCharacterSize(24);
-	points.setColor(Color::White);
-
-	honey.setFont(font);
-	honey.setString("Honey: ");
-	honey.setCharacterSize(24);
-	honey.setColor(Color::White);
-	honey.setPosition(0, 24);
 	*/
 }
 
