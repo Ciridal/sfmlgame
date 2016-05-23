@@ -126,6 +126,11 @@ void Game::setScore(int scoreAmount)
 
 }
 
+void Game::addScore(int scoreAmount)
+{
+	setScore(this->scoreAmount + scoreAmount);
+}
+
 void Game::spawnWorkerBee()
 {
 	if (honeyAmount >= 10)
@@ -157,6 +162,7 @@ void Game::updateGameObjectList()
 		std::vector<GameObject*>::iterator iter = std::find(gameObjects.begin(), gameObjects.end(), destroyObjects.at(0));
 		if (iter != gameObjects.end())
 		{
+			delete *iter;
 			gameObjects.erase(iter);
 			destroyObjects.erase(destroyObjects.begin());
 		}

@@ -15,8 +15,8 @@ public:
 	void Update(float dt) override;
 
 private:
-	float movementSpeed;
 
+	float movementSpeed;
 	std::vector<Vektori2*> waypoints;
 	int currentWaypoint;
 

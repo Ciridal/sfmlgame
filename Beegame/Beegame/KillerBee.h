@@ -8,15 +8,12 @@ class KillerBee : public GameObject
 {
 public:
 
-
-
 	KillerBee(std::string texturePath);
 	~KillerBee();
 
 	void Update(float dt) override;
-	
 
 private:
-	
+	int damage;
 };
 

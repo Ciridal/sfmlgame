@@ -7,13 +7,23 @@ using namespace sf;
 class Enemy : public GameObject
 {
 public:
-
-	
+	static Enemy* instance;
 
 	Enemy(std::string texturePath);
 	~Enemy();
 
 	void Update(float dt);
+	void setHealth(int amount);
+	void takeDamage(int amount);
+
+	void kill();
+
+private:
+
+	int health;
+	int damage;
+
+	void die();
 
 };
 

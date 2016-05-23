@@ -1,16 +1,29 @@
-﻿Build started 21.5.2016 12.49.17.
-     1>Project "C:\Users\Sinja\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sinja\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Sinja\Desktop\sfmlgame\Beegame\Beegame\\lib "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Sinja\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Sinja\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.lib" /MACHINE:X86 Temp\Debug\Enemy.obj
+﻿Build started 23.5.2016 11:32:03.
+     1>Project "C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Temp\Debug\\" /Fd"Temp\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Button.cpp Game.cpp GameObject.cpp KillerBee.cpp WorkerBee.cpp main.cpp
+         WorkerBee.cpp
+     1>c:\users\sinjamon\desktop\sfmlgame\beegame\beegame\workerbee.cpp(54): warning C4018: '>=' : signed/unsigned mismatch
+         KillerBee.cpp
+     1>c:\users\sinjamon\desktop\sfmlgame\beegame\beegame\killerbee.cpp(55): warning C4018: '>=' : signed/unsigned mismatch
+         Game.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         main.cpp
+         GameObject.cpp
+         Button.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\\lib "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.lib" /MACHINE:X86 Temp\Debug\Button.obj
+         Temp\Debug\Enemy.obj
          Temp\Debug\Game.obj
          Temp\Debug\GameObject.obj
          Temp\Debug\Hive.obj
          Temp\Debug\KillerBee.obj
          Temp\Debug\main.obj
          Temp\Debug\WorkerBee.obj
-     1>sfml-graphics-d.lib(sfml-graphics-d-2.dll) : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'X86'
-     1>Done Building Project "C:\Users\Sinja\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" (Build target(s)) -- FAILED.
+         Beegame.vcxproj -> C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\\Build\Debug\Beegame.exe
+     1>Done Building Project "C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.09
+Time Elapsed 00:00:02.38

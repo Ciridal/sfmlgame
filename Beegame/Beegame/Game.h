@@ -41,6 +41,7 @@ public:
 	void setScore(int scoreAmount);
 
 	void addHoney(int honeyAmount);
+	void addScore(int scoreAmount);
 
 	void spawnWorkerBee();
 	void spawnKillerBee();
