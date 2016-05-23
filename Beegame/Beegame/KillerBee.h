@@ -8,8 +8,7 @@ class KillerBee : public GameObject
 {
 public:
 
-	CircleShape killerB;
-	Texture killerTexture;
+
 
 	KillerBee(std::string texturePath);
 	~KillerBee();
@@ -18,6 +17,6 @@ public:
 	
 
 private:
-	bool isClicked;
+	
 };
 
