@@ -54,6 +54,7 @@ void WorkerBee::Update(float dt)
 		if (currentWaypoint >= waypoints.size())
 		{
 			Game::instance->addHoney(20);
+			Game::instance->addScore(20);
 			Game::instance->destroy(this);
 			// go to first waypoint
 			currentWaypoint = 0;

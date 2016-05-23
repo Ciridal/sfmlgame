@@ -15,5 +15,9 @@ public:
 
 	void Update(float dt);
 
+private:
+
+	int damage;
+
 };
 

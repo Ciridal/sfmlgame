@@ -126,6 +126,11 @@ void Game::setScore(int scoreAmount)
 
 }
 
+void Game::addScore(int scoreAmount)
+{
+	setScore(this->scoreAmount + scoreAmount);
+}
+
 void Game::spawnWorkerBee()
 {
 	if (honeyAmount >= 10)

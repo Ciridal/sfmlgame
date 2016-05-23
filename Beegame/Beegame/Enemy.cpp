@@ -6,9 +6,7 @@ Enemy::Enemy(std::string texturePath)
 {
 	
 
-	//sprite.setSize(Vector2f( 50,100));
-	//enemy.setFillColor(Color::Magenta);
-	//enemy.setPosition(700, 500);
+	
 }
 
 

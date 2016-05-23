@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "GameObject.h"
+#include "Vektori2.h"
 
 using namespace sf;
 
@@ -8,8 +9,7 @@ class KillerBee : public GameObject
 {
 public:
 
-	CircleShape killerB;
-	Texture killerTexture;
+	
 
 	KillerBee(std::string texturePath);
 	~KillerBee();
@@ -18,6 +18,9 @@ public:
 	
 
 private:
-	bool isClicked;
+	float movementSpeed;
+	std::vector<Vektori2*> waypoints;
+	int currentWaypoint;
+	int damage;
 };
 

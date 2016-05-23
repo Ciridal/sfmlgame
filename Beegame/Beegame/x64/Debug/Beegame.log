@@ -1,12 +1,19 @@
-﻿Build started 21.5.2016 22.53.50.
-     1>Project "C:\Users\Sinja\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" on node 2 (Build target(s)).
+﻿Build started 23.5.2016 11:01:07.
+     1>Project "C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Sinja\Desktop\sfmlgame\Beegame\Beegame\\include /ZI /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Game.cpp WorkerBee.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\\include /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt Button.cpp Enemy.cpp Game.cpp GameObject.cpp Hive.cpp KillerBee.cpp main.cpp WorkerBee.cpp
          WorkerBee.cpp
+         main.cpp
+         KillerBee.cpp
+         Hive.cpp
+     1>Hive.cpp(37): warning C4552: '-' : operator has no effect; expected operator with side-effect
+         GameObject.cpp
          Game.cpp
+         Enemy.cpp
+         Button.cpp
          Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sinja\Desktop\sfmlgame\Beegame\x64\Debug\Beegame.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Sinja\Desktop\sfmlgame\Beegame\Beegame\\lib "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Sinja\Desktop\sfmlgame\Beegame\x64\Debug\Beegame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Sinja\Desktop\sfmlgame\Beegame\x64\Debug\Beegame.lib" /MACHINE:X64 x64\Debug\Button.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\x64\Debug\Beegame.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\\lib "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\x64\Debug\Beegame.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\x64\Debug\Beegame.lib" /MACHINE:X64 x64\Debug\Button.obj
          x64\Debug\Enemy.obj
          x64\Debug\Game.obj
          x64\Debug\GameObject.obj
@@ -14,9 +21,9 @@
          x64\Debug\KillerBee.obj
          x64\Debug\main.obj
          x64\Debug\WorkerBee.obj
-         Beegame.vcxproj -> C:\Users\Sinja\Desktop\sfmlgame\Beegame\x64\Debug\Beegame.exe
-     1>Done Building Project "C:\Users\Sinja\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" (Build target(s)).
+     1>sfml-graphics-d.lib(sfml-graphics-d-2.dll) : fatal error LNK1112: module machine type 'X86' conflicts with target machine type 'x64'
+     1>Done Building Project "C:\Users\SinjaMon\Desktop\sfmlgame\Beegame\Beegame\Beegame.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.37
+Time Elapsed 00:00:06.84
