@@ -127,9 +127,9 @@ void Game::spawnWorkerBee()
 
 void Game::spawnKillerBee()
 {
-	if (honeyAmount >= 50)
+	if (honeyAmount >= 20)
 	{
-		setHoney(honeyAmount - 50);
+		setHoney(honeyAmount - 20);
 
 		KillerBee* killerB = Instantiate <KillerBee>("..\\killerbeetexture.png");
 		killerB->setScale(0.25f);
@@ -171,7 +171,7 @@ void Game::gameOver()
 
 	Button* gameOverRestartButton = Instantiate <Button>("..\\restartbutton.png");
 	gameOverRestartButton->setRenderPriority(0);
-	gameOverRestartButton->setPosition(0.5f, 0.2f);
+	gameOverRestartButton->setPosition(0.5f, 0.4f);
 	gameOverRestartButton->onClicked = &Game::restartClicked;
 	
 	gameOverScore->setString("Score: " + std::to_string(scoreAmount));

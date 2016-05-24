@@ -9,7 +9,7 @@ Enemy::Enemy(std::string texturePath)
 	else
 		throw "Enemy exists";
 
-	health = 100;
+	health = 50;
 	
 	movementSpeed = 180.0f;
 	reduceHoneyTime = 0.10f;
