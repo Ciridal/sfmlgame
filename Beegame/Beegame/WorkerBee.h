@@ -18,6 +18,8 @@ private:
 
 	float movementSpeed;
 	std::vector<Vektori2*> waypoints;
+
+
 	int currentWaypoint;
 
 };

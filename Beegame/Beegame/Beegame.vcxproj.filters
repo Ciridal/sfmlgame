@@ -39,6 +39,12 @@
     <ClCompile Include="Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WorkerBee.h">
@@ -63,6 +69,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -94,6 +106,12 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="..\flowers.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\gameoverscene.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\restartbutton.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

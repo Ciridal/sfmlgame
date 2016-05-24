@@ -159,19 +159,23 @@
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Hive.cpp" />
     <ClCompile Include="KillerBee.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Scene.cpp" />
     <ClCompile Include="WorkerBee.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameManager.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Hive.h" />
     <ClInclude Include="KillerBee.h" />
+    <ClInclude Include="Scene.h" />
     <ClInclude Include="Vektori2.h" />
     <ClInclude Include="WorkerBee.h" />
   </ItemGroup>
@@ -183,8 +187,10 @@
     <Image Include="..\beehivetexture.png" />
     <Image Include="..\enemytexture.png" />
     <Image Include="..\flowers.png" />
+    <Image Include="..\gameoverscene.png" />
     <Image Include="..\killerbeebutton.png" />
     <Image Include="..\killerbeetexture.png" />
+    <Image Include="..\restartbutton.png" />
     <Image Include="..\workerbeebutton.png" />
     <Image Include="..\workerbeetexture.png" />
   </ItemGroup>

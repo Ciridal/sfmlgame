@@ -63,6 +63,11 @@ public:
 		return *this;
 	}
 
+	bool operator==(const Vektori2& rhs)
+	{
+		return X == rhs.X && Y == rhs.Y;
+	}
+
 	float Magnitude()
 	{
 		return std::sqrt((X * X) + (Y * Y));

@@ -15,5 +15,9 @@ public:
 
 private:
 	int damage;
+	float movementSpeed;
+	std::vector<Vektori2*> waypoints;
+	int currentWaypoint;
+
 };
 

@@ -21,9 +21,11 @@ public:
 private:
 
 	int health;
-	int damage;
-
+	float movementSpeed;
 	void die();
 
+
+	float reduceHoneyTime;
+	float reduceHoneyTimeRemaining;
 };
 

@@ -1,14 +1,9 @@
-#include <iostream>
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
-
-#include "Game.h"
+#include "GameManager.h"
 
 int main()
 {
-
-	Game game;
-	game.Update();
+	GameManager gm;
+	gm.Run();
 
 	return 0;
 }

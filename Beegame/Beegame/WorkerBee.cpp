@@ -30,6 +30,12 @@ WorkerBee::~WorkerBee()
 
 void WorkerBee::Update(float dt)
 {
+	if (Hive::instance == nullptr)
+	{
+		Game::instance->destroy(this);
+		return;
+	}
+
 	Vektori2 directionVector = Vektori2();
 	Vektori2 targetPositionInPix = *waypoints[currentWaypoint];
 

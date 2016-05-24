@@ -1,5 +1,6 @@
 #include "Button.h"
 #include "Game.h"
+#include "GameManager.h"
 
 
 Button::Button(std::string texturePath) 
@@ -15,7 +16,7 @@ Button::~Button()
 
 void Button::Update(float dt)
 {
-	sf::Vector2i m_mousePosition = sf::Mouse::getPosition(*Game::instance->window);
+	sf::Vector2i m_mousePosition = sf::Mouse::getPosition(*GameManager::window);
 	
 
 	bool mouseInButton = m_mousePosition.x >= getPositionInPix().X - getSprite().getGlobalBounds().width / 2

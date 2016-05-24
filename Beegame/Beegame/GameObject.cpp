@@ -1,5 +1,6 @@
 #include "GameObject.h"
 #include "Game.h"
+#include "GameManager.h"
 
 
 GameObject::GameObject(std::string texturePath,int renderPriority)
@@ -26,13 +27,13 @@ Vektori2 GameObject::getPositionInPix()
 
 Vektori2 GameObject::getPosition()
 {
-	return Vektori2(sprite.getPosition().x / Game::instance->window->getSize().x, sprite.getPosition().y / Game::instance->window->getSize().y);
+	return Vektori2(sprite.getPosition().x / GameManager::window->getSize().x, sprite.getPosition().y / GameManager::window->getSize().y);
 }
 
 void GameObject::setPosition(float X, float Y)
 {
 	Y = 1.0f - Y;
-	sprite.setPosition(Game::instance->window->getSize().x * X, Game::instance->window->getSize().y * Y);
+	sprite.setPosition(GameManager::window->getSize().x * X, GameManager::window->getSize().y * Y);
 }
 
 void GameObject::Draw(sf::RenderWindow& window)

@@ -9,7 +9,7 @@ class Hive : public GameObject
 {
 public:
 	
-
+	static Hive* instance;
 
 	Hive(std::string texturePath);
 	~Hive();
@@ -17,10 +17,13 @@ public:
 	
 	void Update(float dt) override;
 
+	void takeDamage(int amount);
+	void setHealth(int amount);
+	void kill();
 
 private:
 	
-	
-
+	int health;
+	void die();
 };
 
